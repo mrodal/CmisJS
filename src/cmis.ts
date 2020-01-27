@@ -251,7 +251,7 @@ export namespace cmis {
 
       let cfg: RequestInit = { method: method, headers: {} };
       if (auth) {
-        cfg.headers['Content-Type'] = auth;
+        cfg.headers['Authorization'] = auth;
       } else {
         cfg.credentials = 'include';
       }
